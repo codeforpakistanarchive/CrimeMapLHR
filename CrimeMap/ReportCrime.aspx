@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ReportCrime.aspx.cs" Inherits="CrimeMap.ReportCrime" %>
+﻿<%@ Page Title="Report Crime" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ReportCrime.aspx.cs" Inherits="CrimeMap.ReportCrime" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
     <h3>Report Crime</h3>
@@ -36,6 +36,9 @@
                 <label class="checkbox-inline">
                     <input type="checkbox" id="is_victim" runat="server" /> A Victim
                 </label>
+            </div>
+            <div>
+                <asp:Button Text="Submit" CssClass="btn btn-primary" runat="server" ID="ReportSubmit" OnClick="ReportSubmit_Click" />
             </div>
         </fieldset>
     </div>

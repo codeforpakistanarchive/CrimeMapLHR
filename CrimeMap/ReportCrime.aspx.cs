@@ -13,5 +13,28 @@ namespace CrimeMap
         {
 
         }
+
+        protected void ReportSubmit_Click(object sender, EventArgs e)
+        {
+            DateTime? my_date;
+            try { 
+                my_date = DateTime.Parse(c_date.Value);
+            }
+            catch
+            {
+                my_date = null;
+            }
+            using (CrimeDBEntities CE = new CrimeDBEntities())
+            {
+                var ci = new CrimeInstance
+                {
+                    title = c_title.Value,
+                    detail = c_detail.Value,
+                    date = my_date
+                };
+                CE.CrimeInstances.Add(ci);
+                CE.SaveChanges();
+            }
+        }
     }
 }
