@@ -16,7 +16,7 @@
         <div class="col-md-4">
             <h2>SMS Alerts</h2>
             <p>
-                Subscribe below to know about any criminal activity in your area, and keep yourself and your family safe
+                Subscribe below to know about any criminal activity in your area, and keep yourself and your loved ones safe
             </p>
               <div class="form-inline">
                   <div class="input-group">
