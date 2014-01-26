@@ -195,6 +195,7 @@
     <Content Include="Site.Master" />
     <Content Include="SuspiciousActivity.aspx" />
     <Content Include="ViewStats.aspx" />
+    <Content Include="ViewStatsHTML.html" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
