@@ -13,13 +13,13 @@ namespace CrimeMap {
     public partial class ReportCrime {
         
         /// <summary>
-        /// c_title control.
+        /// c_category control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl c_title;
+        protected global::System.Web.UI.HtmlControls.HtmlSelect c_category;
         
         /// <summary>
         /// c_detail control.
@@ -67,6 +67,15 @@ namespace CrimeMap {
         protected global::System.Web.UI.HtmlControls.HtmlInputCheckBox is_victim;
         
         /// <summary>
+        /// recaptcha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Recaptcha.RecaptchaControl recaptcha;
+        
+        /// <summary>
         /// ReportSubmit control.
         /// </summary>
         /// <remarks>
@@ -74,5 +83,23 @@ namespace CrimeMap {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ReportSubmit;
+        
+        /// <summary>
+        /// latMap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden latMap;
+        
+        /// <summary>
+        /// lngMap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputHidden lngMap;
     }
 }

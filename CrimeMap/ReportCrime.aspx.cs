@@ -17,6 +17,7 @@ namespace CrimeMap
         protected void ReportSubmit_Click(object sender, EventArgs e)
         {
             DateTime? my_date;
+            float? c_lat, c_long;
             try { 
                 my_date = DateTime.Parse(c_date.Value);
             }
@@ -24,13 +25,23 @@ namespace CrimeMap
             {
                 my_date = null;
             }
+            try
+            {
+                c_lat = float.Parse(latMap.Value);
+                c_long = float.Parse(lngMap.Value);
+            }
+            catch
+            {
+
+            }
+
             using (CrimeDBEntities CE = new CrimeDBEntities())
             {
                 var ci = new CrimeInstance
                 {
-                    title = c_title.Value,
                     detail = c_detail.Value,
-                    date = my_date
+                    date = my_date,
+                    category = Int32.Parse(c_category.Value)
                 };
                 CE.CrimeInstances.Add(ci);
                 CE.SaveChanges();

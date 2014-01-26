@@ -51,12 +51,13 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/About">Report Crime</a></li>
-                        <li><a runat="server" href="~/Contact">Report Other Complaint</a></li>
+                        <li><a runat="server" href="~/ReportCrime">Report Crime</a></li>
+                        <li><a runat="server" href="~/SuspiciousActivity">Report Suspicious Activity</a></li>
+                        <li><a runat="server" href="~/ViewStats">View Statistics</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a runat="server" href="~/Login">Login / Register</a>
+                            <a runat="server" href="~/LoginRegister">Login / Register</a>
                         </li>
                     </ul>
                 </div>
@@ -67,7 +68,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Crime Map Lahore</p>
             </footer>
         </div>
 
